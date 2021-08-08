@@ -1,1 +1,14 @@
-<b> homepage! </b>
+<form action="/your-name/" method="post">
+{% csrf_token %}
+
+    <label for="your_name">Firstname: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}"><br>
+    <label for="your_name">Lastname: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}"><br>
+    <label for="your_name">Email Address: </label>
+    <input id="your_name" type="email" name="your_name" value="{{ current_name }}"><br>
+
+
+    <input type="submit" value="OK">
+
+</form>
